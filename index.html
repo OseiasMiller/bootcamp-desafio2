@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="center teal-text">Pesquisa de Usuários</h3>
+      <div class="row">
+        <div class="input-field col s10">
+          <input id="inputSearch" type="text" class="validate" />
+          <label for="buscar">Buscar:</label>
+        </div>
+        <div class="input-field col s2">
+          <button class="waves-effect waves-light btn" id="btnSearch" disabled>
+            <i class="material-icons left">search</i>
+            Buscar
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s3">
+          <div class="card">
+            <div class="card-content teal-text">
+              <p class="center">
+                Sexo Masculino
+              </p>
+              <p class="center" id="countMale">0</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-content teal-text">
+              <p class="center">Sexo Feminino</p>
+              <p class="center" id="countFemale">0</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-content teal-text">
+              <p class="center">Soma das idades</p>
+              <p class="center" id="sumAges">0</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-content teal-text">
+              <p class="center">Média das idades</p>
+              <p class="center" id="averageAges">0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="totalFilterPersons"></div>
+      <div class="row" id="divPersons"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
